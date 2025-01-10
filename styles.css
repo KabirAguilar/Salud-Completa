@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box}
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px}
+header{
+    background-color: green;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    z-index: 1000}
+header.sticky{
+    background-color: #12ace4;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s ease-in-out}
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00cf07;
+    height: 70px}
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none}
+.menu{
+    display: flex;
+    list-style-type: none}
+.menu li{
+    margin-left: 20px;}
+.menu a{
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;}
+.menu a:hover{
+    color: #00cf07;}
+#menu-toggle{
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #333;
+    transition: all 0.3s ease-in-out;}
+.button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: gray;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;}
+table {
+    border-collapse: collapse;
+    border: 7px solid #f6ae3b;
+    border-radius: 10px;
+    width: 100%;}
+td, th {
+    background-color: #f6ae3b;
+    border: 1px solid #0ca1e6;
+    text-align: center  ;
+    padding: 8px;}
+tr:nth-child(even) {
+    background-color: #0ca1e6;}
+.maps{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 100px;
+    padding-bottom: 30px;}
+
+    @media (max-width: 768px) {
+    .menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: #ffffff;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05)}
+    .menu.active {
+        left: 0}
+
+    .menu li {
+        margin: 25px 0;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    #menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu-toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #menu-toggle.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .img{
+        height: fit-content;
+        width: fit-content;
+        
+    }}
+main {
+    padding-top: 80px;}
+section {
+    padding: 40px 0;}
+footer {
+    background-color: #0d89d1;
+    color: white;
+    padding: 20px 0;}
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;}
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;}
+.footer-section h3 {
+    margin-bottom: 15px;}
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;}
+.footer-section ul li {
+    margin-bottom: 10px;}
+.footer-section ul li a {
+    color: #ddd;
+    text-decoration: none;}
+.footer-section ul li a:hover {
+    text-decoration: underline;}
+.social-icons {
+    display: flex;
+    gap: 10px;}
+.social-icons a {
+    color: white;
+    text-decoration: none;}
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #555555;}
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }}
+
+.imagen{
+    height: 320px;
+    width: 320px;
+    border-radius: 50%;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 3px solid #333;
+    float: left;
+}
+.wrapper{
+    margin: 150px auto;
+    width: 70%;
+}
+.persona h2{
+    font-size: 40px;
+}
+.persona p{
+    font-size: 16px;
+}

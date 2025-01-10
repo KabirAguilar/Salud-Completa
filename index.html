@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    
+    <title>Salud Completa</title>
+</head>
+<body class="bg-gradient-to-r from-blue-300 to-blue-500">
+    <header id="header" class="fixed top-0 left-0 w-full bg-white shadow-md transition-transform duration-300 ease-in-out z-50 transform -translate-y-full bg-green-500">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="flex items-center"><img src="logo.png" alt="Logo" class="h-8 w-auto"></a>
+                <button id="menuToggle" class="md:hidden text-gray-600 hover:text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+                <nav id="mainNav" class="hidden md:block">
+                    <ul class="md:flex md:space-x-4">
+                        <li><a href="#" class="center block py-2 md:py-0 text-gray-600 hover:text-gray-800">Inicio</a></li>
+                        <li><a href="#aboutMe" class="center block py-2 md:py-0 text-gray-600 hover:text-gray-800">Acerca de</a></li>
+                        <li><a href="#tratamientos" class="center block py-2 md:py-0 text-gray-600 hover:text-gray-800">Servicios</a></li>
+                        <li><a href="#" class="center block py-2 md:py-0 text-gray-600 hover:text-gray-800">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <nav id="mobileNav" class="hidden md:hidden bg-white">
+            <ul class="px-4 py-2">
+                <li><a href="#" class="block py-2 text-gray-600 hover:text-gray-800">Inicio</a></li>
+                <li><a href="/aboutMe" class="block py-2 text-gray-600 hover:text-gray-800">Sobre mi</a></li>
+                <li><a href="#" class="block py-2 text-gray-600 hover:text-gray-800">Tratamientos</a></li>
+                <li><a href="#" class="block py-2 text-gray-600 hover:text-gray-800">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <slider class="bg-gray-100">
+        <div class="relative w-full h-screen overflow-hidden">
+            <div id="slide1" class="absolute inset-0 bg-cover bg-center transition-opacity duration-500 ease-in-out opacity-100" style="background-image: url('diabetes-777001_1920.jpg');"></div>
+            <div id="slide2" class="absolute inset-0 bg-cover bg-center transition-opacity duration-500 ease-in-out opacity-0" style="background-image: url('schuessler-2867822_1920.jpg');"></div>
+            <div id="slide3" class="absolute inset-0 bg-cover bg-center transition-opacity duration-500 ease-in-out opacity-0" style="background-image: url('a-heart-2338154_1920.jpg');"></div>
+
+            <div class="absolute inset-0 flex items-center justify-center">
+                <div class="text-center text-white z-10 px-4">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4 shadow-text">SALUD COMPLETA</h1>
+                    <p class="text-xl md:text-2xl mb-8 shadow-text">Medicina Funcional</p>
+                    <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105"><a href="https://api.whatsapp.com/send?phone=+593 998308172&text=¡¡Hola estoy interesado en atenderme con ustedes!!">CONTACTANOS</a>
+                    </button>
+                </div>
+            </div>
+            <!-- Navigation Buttons -->
+            <button id="prevBtn" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-75 text-gray-800 rounded-full p-2 transition duration-300 ease-in-out">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            </button>
+            <button id="nextBtn" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-75 text-gray-800 rounded-full p-2 transition duration-300 ease-in-out">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </button>
+        </div>
+        <main class="container mx-auto px-4 py-12">        
+        </main>
+    </slider>
+    <section class="container mx-auto px-4" id="aboutMe">
+        <section id="sobre-nosotros wrapper">
+            <img class="imagen" src="Screenshot 2024-07-18 183226.png" alt="">
+            <div class="persona">
+                <h2>Sobre Nosotros</h2>
+                <p class="text-justify">Soy Luis Aguilar, medico cirujano graduado en la Universidad de Cuenca, tengo mas de 40 años Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sit quis voluptatum cumque aut tempora cupiditate, cum quod perferendis magnam natus, at perspiciatis? Consectetur et excepturi aliquid nesciunt. Rem, eaque.
+                Iste est corrupti dolore quam iure inventore, sed, excepturi et magnam, nostrum eveniet quod dolor qui repellat quidem! Nostrum exercitationem, omnis molestias rerum eaque minima fuga temporibus ipsam sequi laboriosam!
+                Consectetur cum quaerat cupiditate modi obcaecati unde dolores magnam est similique ducimus ea explicabo eius debitis minima incidunt, blanditiis impedit voluptatum culpa vitae aliquam eaque distinctio dolorem. Nam, commodi aliquid.
+                Nam obcaecati dolore beatae iste eveniet quaerat vitae tempore vel. Veniam optio ea tempora aspernatur error? Fuga quidem repellendus quam nam odit recusandae inventore autem vero, adipisci pariatur commodi distinctio!
+        </section>
+    </section>
+    </main>
+        <div id="tratamientos" class="table-container tratamientos">
+            <table>
+                <caption class="text-5xl font-bold">Tratamientos</caption>
+                <tr>
+                    <td>
+                        <img src="acupuntura.jpg" class="h-80" alt="Imagen 1">
+                        <h3 class="font-bold">Acupuntura y Moxibustion</h3>
+                        <p>La acupuntura consiste en colocar agujas<br/>en los puntos de acupuntura y aplicar presiones para estimular el sistema nervioso y<br/>liberar tensión y estrés</p>
+                    </td>
+                    <td>
+                        <img src="weight-loss-5985845_1920.jpg" class="h-80" alt="Imagen 2">
+                        <h3 class="font-bold">Perdida de peso sin dieta</h3>
+                        <p>Con el uso de medicamentos y terapias, se pueden ayudar a los pacientes a perder peso sin la necesidad de realizar dietas restrictivas.</p>
+                    </td>
+                    <td>
+                        <img src="terapia del dolor.jpg" class="h-80" alt="Imagen 3">
+                        <h3 class="font-bold">Terapias de dolor</h3>
+                        <p>Diseñada para reducir el malestar, controlar<br/>el dolor crónico y restablecer la amplitud de movimiento cuando se ha producido una lesión física buscando el bienestar del paciente</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="medicine-2994788_1920.jpg" class="h-80" alt="Imagen 4">
+                        <h3 class="font-bold">Tratamiento de enfermedades cronicas</h3> 
+                        <p>Con esto nos aseguramos que la persona que sufra una enfermedad cronica sepa controlarla de manera mas<br/>cómoda y segura</p>
+                    </td>
+                    <td>
+                        <img src="ai-generated-9087002_1920.jpg" class="h-80" alt="Imagen 5">
+                        <h3 class="font-bold">Terapias de rejuvenecimiento</h3>
+                        <p>Gracias a medicamentos ricos en vitaminas y minerales y dietas equilibradas podemos lograr un rejuvenecimiento del pastel de<br/>varios años</p>
+                    </td>
+                    <td>
+                        <img src="medical-equipment-4099429_1920.jpg" class="h-80" alt="Imagen 6">
+                        <h3 class="font-bold">Terapias medicina funcional</h3>
+                        <p>Este tipo de medicina se caracteriza por encontrar la raiz de la enfermedad y tratarla en lugar de solo calmar los sintomas que molestan al paciente</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="font-bold text-2xl">Ubicación</h3>
+                    <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d997.4452907760834!2d-79.17559807159414!3d-0.24727665889162323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMMKwMTQnNTAuMiJTIDc5wrAxMCcyOS44Ilc!5e0!3m2!1ses!2sec!4v1735494102558!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="footer-section pl-10">
+                    <h3 class="font-bold text-2xl">Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="/">Inicio</a></li>
+                        <li><a href="/tratamientos">Tratamiento</a></li>
+                        <li><a href="/contacto">Productos</a></li>
+                        <li><a href="/contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="font-bold text-2xl">Contacto</h3>
+                    <p><b>Email:</b> drleaguilarm@yahoo.com</p>
+                    <p><b>Teléfono:</b> 0998308172</p>
+                    <br class="social-icons">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><b>FACEBOOK</b></a></br>
+                        <a href="https://www.instagram.com/drluisenriqueaguilarmejia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer"><b>INSTAGRAM</b></a><br/>
+                        <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105"><a href="https://w.app/saludcompleta">CONTACTANOS</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Salud Completa. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    
+
+    <script src="myscript.js"></script>
+</body>
+</html>
