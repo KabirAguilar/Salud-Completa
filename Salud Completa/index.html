@@ -22,9 +22,9 @@
                 <nav id="mainNav" class="hidden md:block">
                     <ul class="md:flex md:space-x-4">
                         <li><a href="#" class="block py-2 md:py-0 text-gray-600 hover:text-gray-800">Inicio</a></li>
-                        <li><a href="#aboutMe" class="block py-2 md:py-0 text-gray-600 hover:text-gray-800">Acerca de</a></li>
+                        <li><a href="#aboutMe" class="block py-2 md:py-0 text-gray-600 hover:text-gray-800">Sobre Mi</a></li>
                         <li><a href="#tratamientos" class="block py-2 md:py-0 text-gray-600 hover:text-gray-800">Servicios</a></li>
-                        <li><a href="#" class="block py-2 md:py-0 text-gray-600 hover:text-gray-800">Contacto</a></li>
+                        <li><a href="#contacto" class="block py-2 md:py-0 text-gray-600 hover:text-gray-800">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
@@ -32,9 +32,9 @@
         <nav id="mobileNav" class="hidden md:hidden bg-white">
             <ul class="px-4 py-2">
                 <li><a href="#" class="block py-2 text-gray-600 hover:text-gray-800">Inicio</a></li>
-                <li><a href="/aboutMe" class="block py-2 text-gray-600 hover:text-gray-800">Sobre mi</a></li>
-                <li><a href="#" class="block py-2 text-gray-600 hover:text-gray-800">Tratamientos</a></li>
-                <li><a href="#" class="block py-2 text-gray-600 hover:text-gray-800">Contacto</a></li>
+                <li><a href="#aboutMe" class="block py-2 text-gray-600 hover:text-gray-800">Sobre mi</a></li>
+                <li><a href="#tratamientos" class="block py-2 text-gray-600 hover:text-gray-800">Tratamientos</a></li>
+                <li><a href="#contacto" class="block py-2 text-gray-600 hover:text-gray-800">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -46,7 +46,7 @@
 
             <div class="absolute inset-0 flex items-center justify-center">
                 <div class="text-center text-white z-10 px-4">
-                    <h1 class="text-4xl md:text-5xl font-bold mb-4 shadow-text">SALUD COMPLETA</h1>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4 shadow-text wave">SALUD COMPLETA</h1>
                     <p class="text-xl md:text-2xl mb-8 shadow-text">Medicina Funcional</p>
                     <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105"><a href="https://api.whatsapp.com/send?phone=+593 998308172&text=¡¡Hola estoy interesado en atenderme con ustedes!!">CONTACTANOS</a>
                     </button>
@@ -60,15 +60,20 @@
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
             </button>
         </div>
-        <main class="container mx-auto px-4 py-12">        
+        <main class="container mx-auto px-4 py-10">        
         </main>
     </slider>
     <section class="container mx-auto px-4" id="aboutMe">
         <section id="sobre-nosotros wrapper">
-            <img class="imagen" src="Screenshot 2024-07-18 183226.png" alt="">
+            <img class="imagen center mx-auto" src="Screenshot 2024-07-18 183226.png" alt="">
             <div class="persona">
-                <h2>Sobre Nosotros</h2>
-                <p class="text-justify">Soy el Dr. Luis Aguilar, médico cirujano graduado de la Universidad Central del Ecuador. Me especialicé en Acupuntura y Moxibustión China en la Universidad Andina Simón Bolívar (UASB), y a lo largo de mi carrera he complementado mi formación con diplomados en Medicina Biológica, Medicina Funcional e Inflamación de Mucosas. Además, he realizado diversos cursos en terapias alternativas como Ozonoterapia, Balneoterapia, Colonterapia, Terapia Neural y Talasoterapia, lo que me ha permitido desarrollar un enfoque integral para tratar a mis pacientes. Mi objetivo es combinar lo mejor de la medicina convencional con tratamientos naturales y efectivos, ofreciendo soluciones innovadoras para mejorar la salud y el bienestar de quienes confían en mí.
+                <h2>Sobre Mi</h2>
+                <p class="text-justify">Soy el Dr. Luis Aguilar, médico cirujano graduado de la Universidad Central del Ecuador.
+                    Me especialicé en Acupuntura y Moxibustión China en la Universidad Andina Simón Bolívar (UASB), y a lo largo de mi carrera he
+                    complementado mi formación con diplomados en Medicina Biológica, Medicina Funcional e Inflamación de Mucosas. Además, he realizado
+                    diversos cursos en terapias alternativas como Ozonoterapia, Balneoterapia, Colonterapia, Terapia Neural y Talasoterapia, lo que me
+                    ha permitido desarrollar un enfoque integral para tratar a mis pacientes. Mi objetivo es combinar lo mejor de la medicina convencional
+                    con tratamientos naturales y efectivos, ofreciendo soluciones innovadoras para mejorar la salud y el bienestar de quienes confían en mí.
         </section>
     </section>
     </main>
@@ -111,8 +116,17 @@
                 </tr>
             </table>
         </div>
-
-        <footer>
+        <div class="bg- py-8">
+            <h2 class="text-4xl font-bold text-center">¡¡PRODUCTO ESTRELLA!!</h2>
+            <section class="container mx-auto px-4" id="aboutMe">
+                <section id="sobre-nosotros wrapper">
+                    <img class="center mx-auto" src="Imagen de WhatsApp 2025-01-18 a las 11.31.09_b2e7768b.jpg" alt="">
+                    <div class="persona">
+                        <h2>Tratamiento con Peptidos para Rejuvenecimiento</h2>
+                        <p class="text-justify text-white">Hola gente</p>
+                </section>
+        </div>
+        <footer class="footer" id="contacto">
             <div class="footer-content">
                 <div class="footer-section">
                     <h3 class="font-bold text-2xl">Ubicación</h3>
@@ -122,9 +136,9 @@
                     <h3 class="font-bold text-2xl">Enlaces Rápidos</h3>
                     <ul>
                         <li><a href="/">Inicio</a></li>
-                        <li><a href="/tratamientos">Tratamiento</a></li>
-                        <li><a href="/contacto">Productos</a></li>
-                        <li><a href="/contacto">Contacto</a></li>
+                        <li><a href="#tratamientos">Tratamiento</a></li>
+                        <li><a href="#contacto">Productos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
